@@ -1,4 +1,4 @@
-package org.example.stream;
+package org.example.stream.begineer;
 
 import java.util.Arrays;
 import java.util.List;
