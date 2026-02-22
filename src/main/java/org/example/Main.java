@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.functionalinterface.FuncInterface;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -9,5 +11,10 @@ public class Main {
         System.out.printf("Hello and welcome!");
 
 
+        FuncInterface  functRef = (s) -> {
+            return "Hello";
+        };
+
+        System.out.println(functRef.getName("He"));
     }
 }
