@@ -33,12 +33,12 @@ public class FurationPrograms {
     }
 
     public static void getGreaterSalary(){
-        List<Employee> listOfEmployee = Arrays.asList(new Employee(1, "IT", 10000),
-                new Employee(2, "Ops", 3000),
-                new Employee(3, "IT", 4000),
-                new Employee(4, "Ops", 6000),
-                new Employee(5, "IT", 7000),
-                new Employee(6, "Support", 8000));
+        List<Employee> listOfEmployee = Arrays.asList(new Employee(1, "Bharati", "IT", 5000, true, "Female"),
+                new Employee(2,"Rahi", "Ops", 9000,false, "Female"),
+                new Employee(3,"Nikita", "IT", 5000,true, "Female"),
+                new Employee(4,"Ujwala", "Ops", 5000,false, "Male"),
+                new Employee(5,"Pruthvi","IT", 8000,false, "Male"),
+                new Employee(6,"Saanvi","Support", 9000,false, "Male"));
 
         List<Employee> greaterSalary = listOfEmployee.stream()
                 .filter(emp -> emp.getSalary() > 6000)
